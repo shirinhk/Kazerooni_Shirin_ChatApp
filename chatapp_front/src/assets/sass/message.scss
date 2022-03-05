@@ -1,0 +1,70 @@
+.message-panel {
+  float: left;
+  clear: both;
+  width: 50%;
+  background-color: $message-bg;
+  color: $knockout-color;
+  margin-bottom: 1em;
+  padding: 1em;
+  border-radius: $rounded;
+  display: flex;
+
+  h1 {
+    font-family: $body-font;
+  }
+
+  .message-wrapper {
+    margin-left: 1em;
+  }
+}
+
+.sender {
+  float: right;
+  color: black;
+  background-color: $dis-color;
+}
+
+.message-text {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-family: $body-font;
+  color: $main-text-color;
+  font-size: 20px;
+}
+.current-users {
+  background-color: $main-color;
+  color: $knockout-color;
+  font-family: $body-font;
+  font-size: 18px;
+  padding: 10px 25px;
+  margin-top: 10px;
+  border-radius: 15px;
+}
+
+.welcome-text {
+  font-size: 32px;
+  color: $main-text-color;
+  margin-top: 20px;
+}
+
+.logo-v {
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 576px) {
+  .current-users {
+    font-size: 14px;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 15px;
+  }
+
+  .message-text {
+    font-size: 16px;
+  }
+
+  .says {
+    font-size: 12px;
+  }
+}
