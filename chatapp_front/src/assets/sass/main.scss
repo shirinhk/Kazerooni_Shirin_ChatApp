@@ -1,0 +1,64 @@
+body {
+  max-width: 1800px;
+}
+
+img,
+embed,
+object,
+video {
+  max-width: 100%;
+}
+
+p {
+  font-family: $body-font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $main-title;
+}
+
+button {
+  font-family: $body-font;
+}
+
+.hidden {
+  display: none;
+}
+
+header {
+  text-align: center;
+  //background-color: rgb(43, 101, 226);
+  background-image: linear-gradient(
+    to right,
+    rgba(25, 9, 174, 1),
+    rgba(43, 101, 226, 0.5),
+    rgba(174, 246, 2, 1)
+  );
+  padding: 1em 0.8em;
+}
+
+header h2 {
+  font-size: 2em;
+  margin-bottom: 0.8em;
+}
+
+.logo {
+  margin-top: 30px;
+  animation: shake 2s ease-in-out alternate infinite;
+  position: relative;
+}
+
+@keyframes shake {
+  from {
+    left: 0px;
+    top: 0px;
+  }
+  to {
+    left: 0px;
+    top: -15px;
+  }
+}

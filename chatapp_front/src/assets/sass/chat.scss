@@ -1,0 +1,135 @@
+.welcome-message {
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.welcome-text {
+  font-size: 32px;
+  color: $main-text-color;
+  margin-top: 20px;
+}
+
+.logo_v {
+  margin-left: 30px;
+  animation: shake2 2s ease-in-out alternate infinite;
+  position: relative;
+}
+
+@keyframes shake2 {
+  from {
+    left: 0px;
+    top: 0px;
+  }
+  to {
+    left: 10px;
+    top: 0px;
+  }
+}
+
+.disabled {
+  opacity: 0.4;
+}
+
+#chat {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  height: 100vh;
+  background-image: linear-gradient(
+    to right,
+    rgba(25, 9, 174, 1),
+    rgba(43, 101, 226, 0.5),
+    rgba(174, 246, 2, 1)
+  );
+}
+
+#chat-users-ui,
+#chat-messages-ui {
+  padding: 0.8em;
+  position: relative;
+}
+
+#chat-messages-ui {
+  border: thin solid $main-color;
+  border-radius: 15px;
+  padding-top: 20px;
+  margin: 10px;
+  border-radius: 15px;
+  background-color: white;
+}
+
+#chat-users-ui {
+  padding-top: 20px;
+  margin: 10px;
+  border: thin solid $main-color;
+  border-radius: 15px;
+  background-color: white;
+
+  h2 {
+    font-size: 1.3em;
+  }
+}
+
+#current-users {
+  margin-top: 1em;
+  height: 85vh;
+  overflow-y: scroll;
+}
+
+#text-wrapper {
+  position: relative;
+  text-align: center;
+}
+
+textarea {
+  width: 65%;
+  min-height: 100px;
+  border: thin solid $border-color;
+  border-radius: $rounded;
+  margin-top: 1em;
+  padding: 1em;
+  font-size: 1em;
+  resize: none;
+  font-family: $body-font;
+}
+
+#sendMessage {
+  position: relative;
+  top: -60px;
+  left: 15px;
+  border: none;
+  font-size: 18px;
+  text-align: center;
+  border-radius: $rounded;
+  background-color: $main-text-color;
+  color: $knockout-color;
+  padding: 15px;
+  i {
+    color: $knockout-color;
+  }
+}
+
+.chat-messages {
+  height: 50vh;
+  overflow-y: scroll;
+  margin-top: 50px;
+}
+
+.online-users {
+  font-family: $body-font;
+  margin-left: 15px;
+}
+
+.disconnected {
+  color: $dis-color;
+  margin-left: 10px;
+}
+
+.status {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  p:nth-child(2) {
+    font-weight: bold;
+  }
+}
