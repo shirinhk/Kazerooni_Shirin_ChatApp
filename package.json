@@ -1,0 +1,17 @@
+{
+  "name": "chatapp_shirin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vue-cli-scripts start",
+   "start": "serve -s build",
+   "serve": "vue-cli-service serve",
+   "build": "vue-cli-service build",
+   "lint": "vue-cli-service lint",
+   "heroku-postbuild": "npm run build"
+ },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
