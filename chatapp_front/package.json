@@ -3,9 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+     "dev": "vue-cli-scripts start",
+    "start": "serve -s build",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "core-js": "^3.6.5",
