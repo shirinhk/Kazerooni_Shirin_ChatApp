@@ -2,7 +2,7 @@
   "name": "chatapp_front",
   "version": "0.1.0",
   "private": true,
-  "main" : "module",
+
   "scripts": {
      "dev": "vue-cli-scripts start",
     "start": "serve -s build",
