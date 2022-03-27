@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node app"
+   "dev": "vue-cli-scripts start",
+   "start": "serve -s build",
   },
+
   "keywords": [],
   "author": "",
   "license": "ISC"
