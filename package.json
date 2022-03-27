@@ -4,13 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "vue-cli-scripts start",
-   "start": "serve -s build",
-   "serve": "vue-cli-service serve",
-   "build": "vue-cli-service build",
-   "lint": "vue-cli-service lint",
-   "heroku-postbuild": "npm run build"
- },
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC"
