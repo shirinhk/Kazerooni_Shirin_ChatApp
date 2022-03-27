@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-   "dev": "vue-cli-scripts start",
-   "start": "serve -s build",
+   "start": "node app",
   },
 
   "keywords": [],
